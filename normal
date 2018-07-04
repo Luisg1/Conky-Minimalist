@@ -1,0 +1,47 @@
+conky.config = {
+
+-------------------------------------
+--  Generic Settings
+-------------------------------------
+background=true,
+update_interval=1,
+double_buffer=true,
+no_buffers=true,
+imlib_cache_size=0,
+draw_shades=yes,
+draw_outline=yes,
+draw_borders=false,
+
+
+-------------------------------------
+--  Window Specifications
+-------------------------------------
+gap_x=0,
+gap_y=-5,
+
+alignment="mm",
+
+minimum_height=1,
+minimum_width=1,
+
+own_window=true,
+own_window_type="dock",
+own_window_transparent=true,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+
+own_window_argb_visual=true,
+own_window_argb_value=60,
+own_window_colour=000000,
+
+-------------------------------------
+--  Text Settings
+-------------------------------------
+use_xft=true,
+xftalpha=0.2,
+font="Code Light:size=80",
+text_buffer_size=256,
+override_utf8_locale=true,
+};
+conky.text = [[
+${color ffffff}${time %A, %d %B %Y}
+]]
